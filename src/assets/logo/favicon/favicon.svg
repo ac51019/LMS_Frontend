@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <filter id="glow-icon" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <linearGradient id="zGradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#00E5FF" />
+    </linearGradient>
+  </defs>
+  
+  <g transform="translate(106, 106)">
+    <path d="M 150 25 A 125 125 0 1 1 25 150" fill="none" stroke="#1E293B" stroke-width="20" stroke-linecap="round"/>
+    <path d="M 25 150 A 125 125 0 0 1 70 60" fill="none" stroke="#00E5FF" stroke-width="20" stroke-linecap="round" filter="url(#glow-icon)" opacity="0.9"/>
+    
+    <path d="M 85 105 L 215 105 L 85 195 L 215 195" fill="none" stroke="url(#zGradIcon)" stroke-width="35" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <circle cx="85" cy="105" r="18" fill="#FFFFFF" filter="url(#glow-icon)" />
+    <circle cx="215" cy="195" r="18" fill="#FFFFFF" filter="url(#glow-icon)" />
+  </g>
+</svg>
